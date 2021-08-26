@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css?v=1.4" rel="stylesheet">
+</head>
+
+<body>
+<div class="top-bar py-3 search-toggle">
+    <div class="input-search-container">
+        <div class="container-content">
+            <div class="position-relative">
+                <form action="#">
+
+                    <input type="text" class="search-input" placeholder="Search...">
+                    <button type="submit" class="d-none">
+                        search
+                    </button>
+                </form>
+                <button class="close-search-btn">
+                    <svg viewBox="0 0 329.26933 329" width="25.799"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container-content">
+        <div class="row align-items-center">
+            <div class="col-md order-md-0 order-2">
+                <ul class="list-inline top-bar-list text-center text-md-left">
+                    <li class="list-inline-item">
+                        <a href="contact-us.html" class="main-link">
+                            Contact us
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="suggested-page.html" class="main-link">
+                            Gamers Page
+                        </a>
+                    </li>
+                    <li class="list-inline-item d-xl-none d-inline-block">
+                        <div class="header-search-container">
+                            <button class="show-search-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25.799" height="24"
+                                     viewBox="0 0 25.799 24">
+                                    <path id="Path_57" data-name="Path 57"
+                                          d="M748.525,761.06a10.326,10.326,0,0,0,16.448,8.329l5.078,4.66a2.55,2.55,0,0,0,3.448-3.757l-5.279-4.846a10.337,10.337,0,1,0-19.695-4.386Zm17.849,0a7.508,7.508,0,1,1-7.509-7.51A7.507,7.507,0,0,1,766.374,761.06Z"
+                                          transform="translate(-748.525 -750.72)" fill="#2e2e2d"/>
+                                </svg>
+                            </button>
+                            <!--                            <div class="input-search-container">-->
+                            <!--                                <form action="#">-->
+                            <!--                                    <input type="text" placeholder="Search...">-->
+                            <!--                                    <button class="btn primary-btn">-->
+                            <!--                                        search-->
+                            <!--                                    </button>-->
+                            <!--                                </form>-->
+                            <!--                            </div>-->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-auto order-md-2 order-0 text-center text-md-right">
+                <div class="d-flex align-items-center justify-content-md-start justify-content-center">
+                    <div class="dropdown show currency-drop-down">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="priceDrop" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                                <span class="drop-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 10">
+                                        <path id="Polygon_2" data-name="Polygon 2"
+                                              d="M5.143,1.429a1,1,0,0,1,1.715,0l4.234,7.056A1,1,0,0,1,10.234,10H1.766A1,1,0,0,1,.909,8.486Z"
+                                              transform="translate(12 10) rotate(180)" fill="#1a1a1a"/>
+                                    </svg>
+                                </span>
+                            <span class="currency-drop-text">
+                                    SAR
+                                </span>
+                            <span class="currency-drop-flag">
+                                    <img src="images/sar.svg" alt="">
+                                </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="priceDrop">
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="images/sar.svg" alt=""> <span class="currency-text pl-1">SAR</span>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <img src="images/sar.svg" alt=""> <span class="currency-text pl-1">SAR</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="top-bar-user-option pl-4">
+                        <ul class="list-inline d-flex align-items-center">
+                            <li>
+                                <div class="top-bar-cart-container">
+                                    <a href="checkout.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.004 24.444">
+                                            <g id="Group_28" data-name="Group 28"
+                                               transform="translate(-612.361 -61.08)">
+                                                <g id="Group_25" data-name="Group 25"
+                                                   transform="translate(615.225 61.08)">
+                                                    <path id="Path_58" data-name="Path 58"
+                                                          d="M636.824,77.519H619.569a2.055,2.055,0,1,1,0-4.11H634.1L639.3,61.08h6.3a2.055,2.055,0,0,1,0,4.11H642.03Z"
+                                                          transform="translate(-617.513 -61.08)" fill="#414141"/>
+                                                </g>
+                                                <g id="Group_26" data-name="Group 26"
+                                                   transform="translate(615.639 78.948)">
+                                                    <path id="Path_59" data-name="Path 59"
+                                                          d="M624.831,96.507a3.287,3.287,0,1,1-3.287-3.288A3.287,3.287,0,0,1,624.831,96.507Z"
+                                                          transform="translate(-618.257 -93.219)" fill="#414141"/>
+                                                </g>
+                                                <g id="Group_27" data-name="Group 27"
+                                                   transform="translate(627.967 78.948)">
+                                                    <path id="Path_60" data-name="Path 60"
+                                                          d="M647.007,96.507a3.288,3.288,0,1,1-3.287-3.288A3.288,3.288,0,0,1,647.007,96.507Z"
+                                                          transform="translate(-640.431 -93.219)" fill="#414141"/>
+                                                </g>
+                                                <path id="Path_61" data-name="Path 61"
+                                                      d="M629.271,70.581h-12.95l-3.96-9.5h21.126Z"
+                                                      transform="translate(0 0)" fill="#414141"/>
+                                            </g>
+                                        </svg>
+                                        <span class="cart-count">
+                                                2
+                                            </span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="account-setting.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.101 24.444">
+                                        <path id="Path_62" data-name="Path 62"
+                                              d="M769.669,361.033a6.813,6.813,0,0,0-.358-2.05,3.845,3.845,0,0,0-1.368-1.895c-2.213-1.574-5.607-.738-7.721-3.541,0,0-.776-.877.956-3.014h0c.01-.012.017-.023.027-.035,1.771-2.164,1.918-5.607,1.475-8.263a5.368,5.368,0,0,0-3.837-4.163h0q-.205-.063-.416-.112l-.017,0c-.133-.03-.266-.056-.4-.077-.039-.006-.078-.009-.118-.015-.1-.014-.209-.029-.315-.037-.15-.012-.3-.019-.454-.019s-.3.007-.454.019c-.106.008-.21.023-.315.037-.039.005-.078.009-.117.015-.135.021-.269.048-.4.077l-.017,0q-.21.048-.415.112h0a5.369,5.369,0,0,0-3.836,4.163c-.443,2.656-.3,6.1,1.476,8.263l.027.035h0c1.732,2.137.956,3.014.956,3.014a5.505,5.505,0,0,1-.411.484c-2.124,2.223-5.236,1.581-7.311,3.057a3.844,3.844,0,0,0-1.368,1.895,6.815,6.815,0,0,0-.358,2.05c-.007.238,0,.453,0,.633.016.361.05.586.05.586h24.984s.034-.225.05-.586C769.673,361.485,769.677,361.271,769.669,361.033Z"
+                                              transform="translate(-744.572 -337.808)" fill="#414141"
+                                              fill-rule="evenodd"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../rtl/index.html" class="lang-link main-link">
+                                    العربية
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<header id="header" class="search-toggle pages-header">
+    <div class="container-content position-static">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-auto">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="col-auto position-static">
+                <ul class="main-menu">
+                    <li>
+                        <a href="category.html">
+                            iTunes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            Google Play
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            PSN
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            XBOX
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            Game Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.html">
+                            Game Keys
+                        </a>
+                    </li>
+                    <li class="custom-dropdown">
+                        <a href="#" class="">
+                            Mobile Recharge
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10">
+                                <path id="Polygon_1" data-name="Polygon 1"
+                                      d="M5.143,1.429a1,1,0,0,1,1.715,0l4.234,7.056A1,1,0,0,1,10.234,10H1.766A1,1,0,0,1,.909,8.486Z"
+                                      transform="translate(12 10) rotate(180)" fill="#1a1a1a"/>
+                            </svg>
+                        </a>
+                        <ul class="custom-dropdown-menu">
+                            <li>
+                                <a href="category.html">
+                                    link
+                                </a>
+                            </li>
+                            <li>
+                                <a href="category.html">
+                                    link2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="category.html">
+                                    link3
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-auto d-xl-block d-none">
+                <div class="header-search-container">
+                    <button class="show-search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25.799" height="24" viewBox="0 0 25.799 24">
+                            <path id="Path_57" data-name="Path 57"
+                                  d="M748.525,761.06a10.326,10.326,0,0,0,16.448,8.329l5.078,4.66a2.55,2.55,0,0,0,3.448-3.757l-5.279-4.846a10.337,10.337,0,1,0-19.695-4.386Zm17.849,0a7.508,7.508,0,1,1-7.509-7.51A7.507,7.507,0,0,1,766.374,761.06Z"
+                                  transform="translate(-748.525 -750.72)" fill="#2e2e2d"/>
+                        </svg>
+                    </button>
+                    <button class="close-search-btn">
+                        <svg viewBox="0 0 329.26933 329" width="25.799"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="col-auto d-xl-none d-block">
+                <div class="hamburger hamburger--spin unactive">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="input-search-container">
+        <div class="container-content">
+            <form action="#">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button type="submit" class="d-none">
+                    search
+                </button>
+            </form>
+        </div>
+    </div>
+</header>
+<div class="main-container">
+    <div class="sub-page-main-container position-relative overflow-hidden">
+        <img class="guesttek guesttek-right" src="images/guesttek.png" alt="guesttek">
+        <img class="guesttek guesttek-left" src="images/guesttek.png" alt="guesttek">
+        <section class="faqs-section mt-lg-5 mt-4 mb-lg-5 mb-4">
+            <div class="container-content">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="contact-title">
+                            <h3>
+                                FAQs
+                            </h3>
+                            <p>
+                                Would love to answer your qustions
+                            </p>
+                        </div>
+                        
+                        <div class="accordion faqs-accordion" id="faqsAccordion">
+                            <div class="card">
+
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ?
+                                            <a class="acc-icon down-icon" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.888 11.031">
+                                                    <path id="arrow" d="M465.3,877.6l2.087,2.087-8.944,8.944-8.944-8.944,2.087-2.087,6.857,6.857Z" transform="translate(-449.5 -877.6)" fill="#8f8f8f"/>
+                                                </svg>
+                                            </a>
+                                            <a class="acc-icon close-accordion-icon" href="#">
+                                                <span>
+                                                    x
+                                                </span>
+                                            </a>
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqsAccordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Collapsible Group Item #2
+                                            <a class="acc-icon down-icon" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.888 11.031">
+                                                    <path id="arrow" d="M465.3,877.6l2.087,2.087-8.944,8.944-8.944-8.944,2.087-2.087,6.857,6.857Z" transform="translate(-449.5 -877.6)" fill="#8f8f8f"/>
+                                                </svg>
+                                            </a>
+                                            <a class="acc-icon close-accordion-icon" href="#">
+                                                <span>
+                                                    x
+                                                </span>
+                                            </a>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqsAccordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Collapsible Group Item #3
+                                            <a class="acc-icon down-icon" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.888 11.031">
+                                                    <path id="arrow" d="M465.3,877.6l2.087,2.087-8.944,8.944-8.944-8.944,2.087-2.087,6.857,6.857Z" transform="translate(-449.5 -877.6)" fill="#8f8f8f"/>
+                                                </svg>
+                                            </a>
+                                            <a class="acc-icon close-accordion-icon" href="#">
+                                                <span>
+                                                    x
+                                                </span>
+                                            </a>
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqsAccordion">
+                                    <div class="card-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<footer id="footer">
+    <div class="footer-container">
+        <div class="container-content">
+            <div class="row justify-content-lg-between">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box mb-4">
+                        <a href="index.html" class="footer-logo d-lg-inline-block">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                        <p class="footer-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-box mb-4">
+                        <h3 class="footer-title">
+                            Site Map
+                        </h3>
+                        <div class="row ">
+                            <div class="col-6 col-lg-5">
+                                <ul class="footer-list-link list-unstyled">
+                                    <li>
+                                        <a href="category.html">
+                                            iTunes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            Google Play
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            PSN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            XBOX
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-lg-7">
+                                <ul class="footer-list-link list-unstyled">
+                                    <li>
+                                        <a href="category.html">
+                                            Game Cards
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            Game Keys
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="category.html">
+                                            Mobile Recharge
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-auto col-6">
+                    <div class="footer-box mb-4">
+                        <h3 class="footer-title">
+                            Links
+                        </h3>
+                        <ul class="footer-list-link list-unstyled">
+                            <li>
+                                <a href="contact-us.html">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    FAQs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suggested-page.html">
+                                    Gamer Page
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="footer-box mb-4">
+                        <a href="https://api.whatsapp.com/send?phone=966500000000" target="_blank"
+                           class="footer-whatsapp-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.84" height="21.84"
+                                 viewBox="0 0 21.84 21.84">
+                                <g id="Group_7437" data-name="Group 7437" transform="translate(-183.582 -188.082)">
+                                    <g id="Group_7435" data-name="Group 7435" transform="translate(183.582 188.082)">
+                                        <path id="Path_6886" data-name="Path 6886"
+                                              d="M210.106,204.335a10.27,10.27,0,0,0-8.19,16.467l-1.348,3.667,4.136-1.128a10.27,10.27,0,1,0,5.4-19.005Z"
+                                              transform="translate(-199.186 -203.685)" fill="#fff"/>
+                                        <path id="Path_6887" data-name="Path 6887"
+                                              d="M194.5,209.923a10.9,10.9,0,0,1-5.5-1.484l-5.084,1.387,1.663-4.523a10.931,10.931,0,1,1,8.921,4.621Zm-5.3-2.887.241.149a9.624,9.624,0,1,0-2.612-2.379l.215.283-1.036,2.817Z"
+                                              transform="translate(-183.582 -188.082)" fill="#3cbb28"/>
+                                    </g>
+                                    <g id="Group_7436" data-name="Group 7436" transform="translate(189.18 193.305)">
+                                        <path id="Path_6888" data-name="Path 6888"
+                                              d="M325.03,318.672a.914.914,0,0,1,.742.071,1.67,1.67,0,0,1,.344.3l1.652,1.653a.911.911,0,0,1,.271.64.972.972,0,0,1-.164.555,2,2,0,0,1-.23.261c-.266.268-.535.533-.8.8.075.162.173.313.258.47s.184.31.28.462a7.9,7.9,0,0,0,1.21,1.508,7.782,7.782,0,0,0,1.4,1.1c.3.2.613.368.927.537q.446-.448.894-.894a.983.983,0,0,1,.391-.25.912.912,0,0,1,.707.033,1.511,1.511,0,0,1,.426.349q.817.818,1.634,1.635a.944.944,0,0,1,.272.639v.042a1.1,1.1,0,0,1-.107.4,2.522,2.522,0,0,1-.5.57,1.1,1.1,0,0,1-.253.218,2.968,2.968,0,0,1-.868.445,2.887,2.887,0,0,1-.449.11,1.643,1.643,0,0,1-.506.021,4.366,4.366,0,0,1-.634-.068c-.187-.023-.367-.08-.551-.118-.182-.057-.368-.1-.544-.173-.228-.067-.443-.172-.663-.26-.2-.094-.393-.191-.587-.29-.268-.155-.541-.3-.8-.481-.317-.2-.608-.431-.907-.653-.328-.265-.647-.542-.951-.835-.285-.259-.543-.545-.811-.82a12.294,12.294,0,0,1-2.017-2.714,5.47,5.47,0,0,1-.548-1.645,4.375,4.375,0,0,1-.036-1.239,3.018,3.018,0,0,1,.572-1.544.68.68,0,0,1,.086-.133l.415-.417A1.029,1.029,0,0,1,325.03,318.672Z"
+                                              transform="translate(-323.485 -318.623)" fill="#3cbb28"/>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>
+                                +966 00 00000
+                            </span>
+                        </a>
+                        <ul class="list-inline credit-list">
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/1.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/2.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/3.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/4.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/5.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/6.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/7.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/8.svg" alt="">
+                            </li>
+                            <li class="list-inline-item">
+                                <img src="images/credit-card/9.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right mt-md-3 mt-2">
+        <div class="container-content">
+            <div class="row">
+                <div class="col-md-4 text-md-left text-center">
+                    <p class="copy-right-text">© 2021 Gamers Online , All Rights Reserved</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <ul class="list-inline social-list my-md-0 my-2">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.836" height="16.339"
+                                     viewBox="0 0 19.836 16.339">
+                                    <g id="Group_5405" data-name="Group 5405" transform="translate(0 0)">
+                                        <g id="Group_5400" data-name="Group 5400" transform="translate(0 0)">
+                                            <path id="Path_930" data-name="Path 930"
+                                                  d="M924.224,296.751a8.13,8.13,0,0,1-2,.572c.322-.054.8-.639.989-.875a3.685,3.685,0,0,0,.667-1.215c.017-.034.031-.078,0-.1a.112.112,0,0,0-.106.009,10.265,10.265,0,0,1-2.38.911.159.159,0,0,1-.164-.044,1.936,1.936,0,0,0-.208-.213,4.214,4.214,0,0,0-1.153-.707,4.017,4.017,0,0,0-1.768-.285,4.226,4.226,0,0,0-1.677.474,4.331,4.331,0,0,0-1.354,1.106,4.148,4.148,0,0,0-.808,1.619,4.393,4.393,0,0,0-.043,1.709c.013.1,0,.109-.082.1a12.709,12.709,0,0,1-8.179-4.163c-.1-.109-.148-.109-.226.008a4.147,4.147,0,0,0,.707,4.9c.16.152.325.3.5.442a4.178,4.178,0,0,1-1.578-.442c-.1-.06-.143-.026-.152.082a2.526,2.526,0,0,0,.026.468,4.193,4.193,0,0,0,2.585,3.344,2.434,2.434,0,0,0,.525.16,4.671,4.671,0,0,1-1.548.048c-.113-.022-.156.035-.113.143a4.355,4.355,0,0,0,3.252,2.724c.148.026.295.026.443.06-.009.013-.017.013-.026.026a5.144,5.144,0,0,1-2.221,1.177,7.956,7.956,0,0,1-3.373.432c-.181-.027-.219-.025-.269,0s-.006.074.052.121c.23.152.464.286.7.417a11.115,11.115,0,0,0,2.255.9,12.008,12.008,0,0,0,11.659-2.726A12.233,12.233,0,0,0,922.38,299c0-.128.152-.2.242-.267a7.854,7.854,0,0,0,1.579-1.65.477.477,0,0,0,.1-.316v-.018C924.3,296.7,924.305,296.714,924.224,296.751Z"
+                                                  transform="translate(-904.462 -294.793)" fill="#8f8f8f"/>
+                                        </g>
+                                        <g id="Group_5401" data-name="Group 5401" transform="translate(5.891 16.269)">
+                                            <path id="Path_931" data-name="Path 931" d="M913.909,320.882Z"
+                                                  transform="translate(-913.909 -320.882)" fill="#8f8f8f"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                        <g id="Group_5402" data-name="Group 5402" transform="translate(5.74 16.269)">
+                                            <path id="Path_932" data-name="Path 932"
+                                                  d="M913.818,320.882c-.026,0-.327,0,0,0Z"
+                                                  transform="translate(-913.666 -320.882)" fill="#8f8f8f"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                        <g id="Group_5403" data-name="Group 5403" transform="translate(6.559 16.271)">
+                                            <path id="Path_933" data-name="Path 933"
+                                                  d="M914.98,320.9c0-.034.352,0,0,0C914.98,320.884,915.024,320.9,914.98,320.9Z"
+                                                  transform="translate(-914.98 -320.886)" fill="#8f8f8f"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                        <g id="Group_5404" data-name="Group 5404" transform="translate(13.493 0.024)">
+                                            <path id="Path_934" data-name="Path 934"
+                                                  d="M926.182,294.831a.071.071,0,0,1-.082,0Z"
+                                                  transform="translate(-926.1 -294.831)" fill="#8f8f8f"
+                                                  fill-rule="evenodd"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8.954" height="19.275"
+                                     viewBox="0 0 8.954 19.275">
+                                    <g id="Group_5399" data-name="Group 5399" transform="translate(0 0)">
+                                        <path id="Path_929" data-name="Path 929"
+                                              d="M798.557,329.594v9.319a.243.243,0,0,0,.243.243h3.46a.243.243,0,0,0,.243-.243v-9.471h2.509a.242.242,0,0,0,.242-.222l.242-2.854a.243.243,0,0,0-.242-.263H802.5v-2.024a.859.859,0,0,1,.859-.86H805.3a.243.243,0,0,0,.243-.243v-2.853a.243.243,0,0,0-.243-.243h-3.267a3.471,3.471,0,0,0-3.472,3.472V326.1h-1.73a.243.243,0,0,0-.243.243V329.2a.242.242,0,0,0,.243.243h1.73Z"
+                                              transform="translate(-796.584 -319.881)" fill="#8f8f8f"
+                                              fill-rule="evenodd"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <svg id="Group_5407" data-name="Group 5407" xmlns="http://www.w3.org/2000/svg"
+                                     width="19.996" height="19.997" viewBox="0 0 19.996 19.997">
+                                    <g id="Group_5406" data-name="Group 5406" transform="translate(0)">
+                                        <path id="Path_935" data-name="Path 935"
+                                              d="M781.191,239.461h-7.95a6.023,6.023,0,0,0-6.023,6.023v7.95a6.024,6.024,0,0,0,6.023,6.023h7.95a6.023,6.023,0,0,0,6.023-6.023v-7.95A6.023,6.023,0,0,0,781.191,239.461Zm4.137,13.974a4.137,4.137,0,0,1-4.137,4.137h-7.95a4.137,4.137,0,0,1-4.137-4.137v-7.95a4.137,4.137,0,0,1,4.137-4.137h7.95a4.137,4.137,0,0,1,4.137,4.137Z"
+                                              transform="translate(-767.218 -239.461)" fill="#8f8f8f"/>
+                                        <path id="Path_936" data-name="Path 936"
+                                              d="M780.85,248.317a4.938,4.938,0,1,0,4.938,4.939A4.944,4.944,0,0,0,780.85,248.317Zm0,8.1a3.163,3.163,0,1,1,3.163-3.163A3.166,3.166,0,0,1,780.85,256.419Z"
+                                              transform="translate(-770.818 -243.128)" fill="#8f8f8f"/>
+                                        <path id="Path_937" data-name="Path 937"
+                                              d="M792.43,245.744a1.176,1.176,0,1,0,1.176,1.176A1.176,1.176,0,0,0,792.43,245.744Z"
+                                              transform="translate(-777.171 -242.063)" fill="#8f8f8f"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21.319" height="14.923"
+                                     viewBox="0 0 21.319 14.923">
+                                    <g id="Group_5409" data-name="Group 5409" transform="translate(0 0)">
+                                        <g id="Group_5408" data-name="Group 5408" transform="translate(0 0)">
+                                            <path id="Path_938" data-name="Path 938"
+                                                  d="M789.581,204.5a4.641,4.641,0,0,0-4.641-4.641H772.9a4.641,4.641,0,0,0-4.641,4.641v5.641a4.641,4.641,0,0,0,4.641,4.641H784.94a4.641,4.641,0,0,0,4.641-4.641Zm-7.594,3.1-4.8,2.633c-.209.113-.4-.038-.4-.275v-5.4c0-.24.193-.391.4-.272l4.834,2.772A.315.315,0,0,1,781.987,207.609Z"
+                                                  transform="translate(-768.262 -199.863)" fill="#8f8f8f"/>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-right text-center">
+                    <ul class="list-inline copy-list-link">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/parsley.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/swiper-animation.umd.min.js"></script>
+<script src="js/main.js?v=1.82"></script>
+</body>
+
+</html>

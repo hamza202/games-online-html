@@ -1,0 +1,52 @@
+
+.hero-slider-section .swiper-controls .swiper-button-next, .hero-slider-section .swiper-controls .swiper-button-prev {
+  transform: rotate(180deg);
+}
+.top-bar .top-bar-list li a{
+  font-size: 15px;
+}
+#header .main-menu li a{
+  font-size: 16px;
+  @include media-breakpoint-up(xxl){
+    font-size: 18px;
+  }
+}
+#header .main-menu li ul.custom-dropdown-menu li a{
+  text-align: right;
+}
+.guesttek.guesttek-right{
+  transform: translateX(-50%);
+}
+.guesttek.guesttek-left {
+  transform: translateX(50%);
+}
+.faqs-accordion .card .card-header button{
+  padding: 25px 30px 25px 100px;
+  @include media-breakpoint-down(sm) {
+    padding: 15px 20px 15px 40px;
+  }
+}
+.faqs-accordion .card .card-body {
+  padding: 0 30px 25px 100px;
+  @include media-breakpoint-down(sm){
+    padding: 0 20px 15px 40px;
+  }
+}
+.discount-form .discount-form-container input{
+  padding: 10px 20px 10px 107px;
+}
+.discount-form .discount-form-container button {
+  left: 7px;
+  right: auto;
+}
+.testimonial-content img.dots-img{
+  transform: scaleX(-1);
+}
+.btn{
+  font-size: 14px;
+}
+.main-menu {
+  @include media-breakpoint-up(xl) {
+    transform: translateX(-50px) !important;
+  }
+}

@@ -1,0 +1,67 @@
+.btn {
+  line-height: 1;
+  border-radius: 8px;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+
+  transition: all ease-in-out 0.3s;
+}
+
+%btn-comfig {
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  @extend %border-radius-sm;
+  @include media-breakpoint-up(xxl) {
+    height: 50px;
+    font-size: 18px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.primary-btn {
+  @extend %btn-comfig;
+  background-color: $primary-color;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($color: $primary-color, $alpha: 0.9);
+    color: $white;
+  }
+}
+
+.orange-btn {
+  @extend %btn-comfig;
+  background-color: $orange-color;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($color: $orange-color, $alpha: 0.9);
+    color: $white;
+  }
+}
+
+.icon-btn {
+  svg {
+    height: 17px;
+    width: auto;
+    margin-#{$opDir}: 5px;
+
+    path {
+      fill: $white-color;
+    }
+  }
+}
